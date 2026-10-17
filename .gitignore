@@ -1,0 +1,55 @@
+### JetBrains (Rider, IntelliJ, WebStorm, CLion и др.) ###
+.idea/
+*.sln.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+### Visual Studio ###
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bincrafter/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+
+### Visual Studio Code ###
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+### Eclipse ###
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Xcode (Mac) ###
+.xcodeproj/*
+!.xcodeproj/project.pbxproj
+!.xcodeproj/xcshareddata/
+!.xcodeproj/project.xcworkspace/
+xcuserdata/
+
+### Файлы операционных систем (Бонус) ###
+Thumbs.db
+.DS_Store
+
+
+[Bb]in/
+[Oo]bj/
