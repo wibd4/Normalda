@@ -1,0 +1,420 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #051026 0%, #010510 100%);
+    color: #f0f5ff;
+    min-height: 100vh;
+    padding-top: 80px; 
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(5, 16, 38, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    max-width: 1200px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #b0d4ff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    text-align: center;
+    flex: 1;
+}
+
+nav a.nav-home {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    flex: 1.5;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #051026;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    border-color: #ffffff;
+}
+
+.hero-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle at center, rgba(0, 128, 255, 0.15) 0%, transparent 70%);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.logo-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #0052cc, #0080ff);
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo-badge::before {
+    content: "🎄 ";
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 30px rgba(0, 128, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #cbdcf7;
+    margin-bottom: 40px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 35px;
+    background: #ffffff;
+    color: #051026;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #0080ff;
+    box-shadow: 0 5px 20px rgba(0, 128, 255, 0.3);
+    text-align: center;
+}
+
+.cta-button:hover {
+    background: #0080ff;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 128, 255, 0.6);
+    border-color: #ffffff;
+}
+
+.cta-secondary {
+    display: inline-block;
+    padding: 14px 35px;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+    text-align: center;
+}
+
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+.day-section {
+    min-height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.day-section:nth-child(even) {
+    background: rgba(0, 80, 255, 0.03);
+}
+
+.day-section:nth-child(odd) {
+    background: rgba(5, 16, 38, 0.4);
+}
+
+.day-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 128, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.content-box {
+    background: rgba(10, 25, 55, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 128, 255, 0.05);
+}
+
+.content-box p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #e2ecf7;
+}
+
+.date-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: rgba(5, 16, 38, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #b0d4ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.date-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 128, 255, 0.2);
+}
+
+.day-calendar {
+    font-size: 0.95rem;
+    color: #ffffff;
+    background: rgba(0, 128, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 128, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.date-item:hover .day-calendar {
+    background: #0080ff;
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+}
+
+.norm-container {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.norm-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0, 128, 255, 0.3);
+}
+
+.norm-user-content {
+    color: #e2ecf7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    border-radius: 12px; 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.day-section h1,
+.day-section h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 140px; 
+    }
+
+    header {
+        height: auto;
+        padding: 12px 0;
+    }
+    
+    nav {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 6px;
+        width: 95%;
+    }
+    
+    nav a {
+        padding: 8px 6px;
+        font-size: 13px;
+        flex: none;
+        min-width: 42px;
+    }
+    
+    nav a.nav-home {
+        flex: none;
+        width: 100%; 
+        margin-bottom: 4px;
+    }
+
+    .day-section h1,
+    .day-section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        min-height: calc(100vh - 140px);
+        padding: 20px 16px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem; 
+        margin-bottom: 15px;
+    }
+    
+    .hero-section p {
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        gap: 12px;
+    }
+    
+    .cta-button {
+        padding: 12px 20px;
+        width: 100%;
+    }
+    
+    .day-section {
+        padding: 60px 12px; 
+    }
+    
+    .day-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .content-box {
+        padding: 24px 16px; 
+        border-radius: 16px;
+    }
+    
+    .content-box p {
+        font-size: 1rem;
+    }
+    
+    .date-item {
+        flex-direction: column; 
+        gap: 8px;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .date-item:hover {
+        transform: none; 
+    }
+
+    .norm-container {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .norm-label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+}
