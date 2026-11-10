@@ -11,10 +11,11 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #120621 0%, #05020a 100%);
+    background: linear-gradient(135deg, #0d0418 0%, #020104 100%);
     color: #f1ebfc;
     min-height: 100vh;
     padding-top: 80px; 
+    position: relative;
 }
 
 header {
@@ -23,14 +24,14 @@ header {
     left: 0;
     width: 100%;
     height: 80px;
-    background: rgba(22, 10, 43, 0.85);
+    background: rgba(14, 5, 26, 0.9);
     backdrop-filter: blur(12px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    border-bottom: 1px solid rgba(157, 78, 221, 0.25);
+    border-bottom: 1px solid rgba(255, 123, 0, 0.25);
 }
 
 nav {
@@ -42,7 +43,7 @@ nav {
 }
 
 nav a {
-    color: #e0aaff;
+    color: #ff9e00;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -55,16 +56,16 @@ nav a {
 }
 
 nav a.nav-home {
-    background: rgba(123, 44, 191, 0.2);
-    border-color: rgba(157, 78, 221, 0.4);
+    background: rgba(255, 123, 0, 0.1);
+    border-color: rgba(255, 123, 0, 0.3);
     flex: 1.5;
 }
 
 nav a:hover {
-    background-color: #7b2cbf;
+    background-color: #ff7b00;
     color: #ffffff;
-    box-shadow: 0 0 15px rgba(123, 44, 191, 0.6);
-    border-color: #9d4edd;
+    box-shadow: 0 0 15px rgba(255, 123, 0, 0.6);
+    border-color: #ff9e00;
 }
 
 .hero-section {
@@ -73,7 +74,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background: radial-gradient(circle at center, rgba(123, 44, 191, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(255, 123, 0, 0.12) 0%, transparent 70%);
     text-align: center;
 }
 
@@ -84,7 +85,7 @@ nav a:hover {
 
 .logo-badge {
     display: inline-block;
-    background: linear-gradient(45deg, #7b2cbf, #9d4edd);
+    background: linear-gradient(45deg, #ff7b00, #9d4edd);
     color: #fff;
     padding: 6px 20px;
     border-radius: 20px;
@@ -93,7 +94,11 @@ nav a:hover {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 24px;
-    box-shadow: 0 0 20px rgba(123, 44, 191, 0.5);
+    box-shadow: 0 0 20px rgba(255, 123, 0, 0.5);
+}
+
+.logo-badge::before {
+    content: "🎃 ";
 }
 
 .hero-section h1 {
@@ -101,13 +106,13 @@ nav a:hover {
     color: #fff;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-shadow: 0 0 30px rgba(199, 125, 255, 0.3);
+    text-shadow: 0 0 30px rgba(255, 123, 0, 0.4), 0 0 10px rgba(255, 158, 0, 0.2);
 }
 
 .hero-section p {
     font-size: 1.25rem;
     line-height: 1.7;
-    color: #c77dff;
+    color: #ffb703;
     margin-bottom: 40px;
 }
 
@@ -121,35 +126,35 @@ nav a:hover {
 .cta-button {
     display: inline-block;
     padding: 14px 35px;
-    background: #7b2cbf;
+    background: #ff7b00;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     border-radius: 30px;
     transition: all 0.3s ease;
-    border: 1px solid #9d4edd;
-    box-shadow: 0 5px 20px rgba(123, 44, 191, 0.4);
+    border: 1px solid #ff9e00;
+    box-shadow: 0 5px 20px rgba(255, 123, 0, 0.4);
     text-align: center;
 }
 
 .cta-button:hover {
-    background: #9d4edd;
+    background: #ff9e00;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(157, 78, 221, 0.6);
+    box-shadow: 0 8px 25px rgba(255, 158, 0, 0.7);
 }
 
 .cta-secondary {
     background: transparent;
-    color: #e0aaff;
-    border-color: rgba(157, 78, 221, 0.6);
+    color: #ff9e00;
+    border-color: rgba(255, 123, 0, 0.5);
     box-shadow: none;
 }
 
 .cta-secondary:hover {
-    background: rgba(123, 44, 191, 0.2);
+    background: rgba(255, 123, 0, 0.15);
     color: #fff;
-    border-color: #9d4edd;
-    box-shadow: 0 5px 20px rgba(123, 44, 191, 0.2);
+    border-color: #ff9e00;
+    box-shadow: 0 5px 20px rgba(255, 123, 0, 0.2);
 }
 
 .day-section {
@@ -159,41 +164,41 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 100px 20px; 
-    border-bottom: 1px solid rgba(157, 78, 221, 0.1);
+    border-bottom: 1px solid rgba(255, 123, 0, 0.1);
     text-align: center;
 }
 
 .day-section:nth-child(even) {
-    background: rgba(60, 9, 108, 0.15);
+    background: rgba(255, 123, 0, 0.02);
 }
 
 .day-section:nth-child(odd) {
-    background: rgba(94, 9, 142, 0.05);
+    background: rgba(14, 5, 26, 0.3);
 }
 
 .day-section h2 {
     font-size: 2.5rem;
-    color: #c77dff;
+    color: #ff7b00;
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 20px rgba(199, 125, 255, 0.3);
+    text-shadow: 0 0 20px rgba(255, 123, 0, 0.4);
 }
 
 .content-box {
-    background: rgba(20, 9, 41, 0.75);
-    border: 1px solid rgba(157, 78, 221, 0.25);
+    background: rgba(13, 6, 22, 0.88);
+    border: 1px solid rgba(255, 123, 0, 0.2);
     padding: 40px;
     border-radius: 20px;
     max-width: 700px;
     width: 100%;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 123, 0, 0.03);
 }
 
 .content-box p {
     font-size: 1.15rem;
     line-height: 1.7;
-    color: #d8bbff;
+    color: #f1ebfc;
 }
 
 .date-list {
@@ -210,10 +215,10 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
-    background: rgba(36, 17, 69, 0.4);
-    border: 1px solid rgba(157, 78, 221, 0.2);
+    background: rgba(25, 11, 44, 0.6);
+    border: 1px solid rgba(255, 123, 0, 0.15);
     border-radius: 12px;
-    color: #d8bbff;
+    color: #ff9e00;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -221,32 +226,32 @@ nav a:hover {
 }
 
 .date-item:hover {
-    background: rgba(123, 44, 191, 0.3);
-    border-color: #9d4edd;
+    background: rgba(255, 123, 0, 0.15);
+    border-color: #ff7b00;
     color: #fff;
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 123, 0, 0.3);
 }
 
 .day-calendar {
     font-size: 0.95rem;
-    color: #c77dff;
-    background: rgba(199, 125, 255, 0.15);
+    color: #ff7b00;
+    background: rgba(255, 123, 0, 0.15);
     padding: 4px 12px;
     border-radius: 20px;
-    border: 1px solid rgba(199, 125, 255, 0.3);
+    border: 1px solid rgba(255, 123, 0, 0.3);
     transition: all 0.3s ease;
 }
 
 .date-item:hover .day-calendar {
-    background: #9d4edd;
+    background: #ff7b00;
     color: #fff;
 }
 
 .norm-container {
     margin-top: 30px;
     padding-top: 25px;
-    border-top: 1px solid rgba(157, 78, 221, 0.2);
+    border-top: 1px solid rgba(255, 123, 0, 0.15);
     text-align: left;
 }
 
@@ -256,11 +261,11 @@ nav a:hover {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #c77dff;
+    color: #ff7b00;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    text-shadow: 0 0 10px rgba(199, 125, 255, 0.2);
+    text-shadow: 0 0 10px rgba(255, 123, 0, 0.3);
 }
 
 .norm-user-content {
@@ -284,17 +289,17 @@ nav a:hover {
     max-width: 100%;
     height: auto; 
     border-radius: 12px; 
-    border: 1px solid rgba(157, 78, 221, 0.3);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 123, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     object-fit: cover;
 }
 
 .day-section h1,
 .day-section h3 {
-    color: #c77dff;
+    color: #ff7b00;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 20px rgba(199, 125, 255, 0.3);
+    text-shadow: 0 0 20px rgba(255, 123, 0, 0.4);
     text-align: center;
 }
 
@@ -302,7 +307,7 @@ nav a:hover {
     body {
         padding-top: 140px; 
     }
-    
+
     header {
         height: auto;
         padding: 12px 0;
